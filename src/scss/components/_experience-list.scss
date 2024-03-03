@@ -1,0 +1,41 @@
+.experience-list {
+  counter-reset: number 0;
+
+  &__item {
+    --colorAccent: var(--color-green);
+
+    grid-column: 4 span;
+    counter-increment: number 1;
+    list-style-position: inside;
+
+    &::marker {
+      content: '0'counter(number);
+      font-size: 117px;
+      line-height: 141px;
+    }
+
+    &:nth-child(3n - 1) {
+      --colorAccent: var(--color-blue);
+    }
+
+    &:nth-child(3n) {
+      --colorAccent: var(--color-pink);
+    }
+
+    &:nth-child(n + 10) {
+
+      &::marker {
+        content: counter(number);
+      }
+    }
+  }
+
+  &__item-title {
+    color: var(--color-white);
+    margin-bottom: 22px;
+
+    span {
+      color: var(--colorAccent);
+    }
+  }
+}

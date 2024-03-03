@@ -1,0 +1,24 @@
+.experience {
+  padding-block: 120px;
+
+  &__header {
+    max-width: 700px;
+    margin-bottom: 40px;
+    color: var(--color-white);
+
+    span {
+      display: inline-block;
+      font-weight: 700;
+      color: var(--color-light-gray);
+      text-transform: uppercase;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__list {
+    gap: 24px;
+  }
+}
