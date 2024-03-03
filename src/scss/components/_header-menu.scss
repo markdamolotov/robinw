@@ -1,0 +1,29 @@
+.header-menu {
+  font-size: 16px;
+  color: var(--color-white);
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    @include flex-center;
+
+    height: 88px;
+    padding-inline: 24px;
+
+    &:focus-visible {
+      outline: 1px solid var(--color-white);
+      outline-offset: 0;
+    }
+
+    @include hover {
+      background-color: var(--color-accent);
+    }
+
+    &:active {
+      background-color: darken(#5221e6, 15%);
+    }
+  }
+}
