@@ -5,6 +5,7 @@
     --colorAccent: var(--color-green);
 
     grid-column: 4 span;
+    max-width: 368px;
     counter-increment: number 1;
     list-style-position: inside;
 
@@ -31,11 +32,15 @@
   }
 
   &__item-title {
-    color: var(--color-white);
     margin-bottom: 22px;
+    color: var(--color-white);
 
     span {
       color: var(--colorAccent);
     }
+  }
+
+  &__item-description {
+    font-size: 16px;
   }
 }
