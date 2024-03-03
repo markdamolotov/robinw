@@ -2,6 +2,11 @@
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
+
+  &--wide {
+    max-width: 1440px;
+    padding-inline: 0;
+  }
 }
 
 .visually-hidden {
