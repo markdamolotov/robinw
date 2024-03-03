@@ -1,10 +1,28 @@
 :root {
-  --color-light: #fff;
-  --color-dark: #000;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-dark: #181823;
+  --color-light-gray: #8491a0;
+  --color-dark-gray: #5b6876;
+  --color-accent: #5221e6;
+  --color-blue: #609bff;
+  --color-green: #3cc74e;
+  --color-pink: #e95d90;
+  --color-peach: #fff3e4;
+  --color-violet: #fbe4ff;
+
+  --border: 1px solid var(--color-dark);
+  --border-alt: 1px solid var(--color-dark-gray);
+  --border-accent: 1px solid var(--color-accent);
+
+  --button-height: 75px;
+  --button-height-small: 51px;
+  --input-height: 50px;
+  --textarea-height: 100px;
 
   --font-family-base: 'Sen';
 
-  --container-width: 1200px;
+  --container-width: 1296px;
   --container-padding-x: 15px;
 
   --transition-duration: 0.2s;
