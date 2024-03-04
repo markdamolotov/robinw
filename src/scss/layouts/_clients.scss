@@ -1,0 +1,35 @@
+.clients {
+  overflow-x: auto;
+  scrollbar-width: none;
+
+  &__list {
+    display: flex;
+    scroll-snap-type: x mandatory;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    flex-basis: 340px;
+    border: var(--border);
+    scroll-snap-align: start;
+  }
+
+  &__link {
+    @include flex-center;
+
+    height: 140px;
+
+    &:focus-visible {
+      outline: 1px solid var(--color-white);
+      outline-offset: 0;
+    }
+
+    @include hover {
+      color: var(--color-accent);
+    }
+
+    &:active {
+      color: darken(#5221e6, 15%);
+    }
+  }
+}
