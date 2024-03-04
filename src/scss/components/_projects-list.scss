@@ -1,0 +1,32 @@
+.projects-list {
+
+  &__link {
+    display: flex;
+
+    &:focus-visible {
+      outline: 1px solid var(--color-white);
+      outline-offset: 0;
+
+      .projects-card__image {
+        transition-duration: var(--transition-duration);
+        transform: scale(1.1);
+        filter: brightness(50%) blur(2px);
+      }
+    }
+
+    @include hover {
+      .projects-card__image {
+        transition-duration: var(--transition-duration);
+        transform: scale(1.1);
+        filter: brightness(50%) blur(2px);
+      }
+    }
+
+    &:active {
+      .projects-card__title {
+        color: var(--color-accent);
+        transition-duration: var(--transition-duration);
+      }
+    }
+  }
+}

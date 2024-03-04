@@ -1,0 +1,16 @@
+.projects-card {
+  background-color: var(--color-dark);
+
+  &__image-wrapper {
+    overflow: hidden;
+  }
+
+  &__body {
+    padding: 40px 32px;
+  }
+
+  &__title {
+    margin-bottom: 13px;
+    color: var(--color-white);
+  }
+}
