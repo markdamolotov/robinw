@@ -1,0 +1,17 @@
+.skillset {
+  padding-block: 120px;
+
+  &__inner {
+    display: flex;
+    column-gap: 72px;
+  }
+
+  &__header {
+    max-width: 368px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    color: var(--color-white);
+  }
+}

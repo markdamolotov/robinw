@@ -1,0 +1,19 @@
+.skillset-list {
+  gap: 48px 24px;
+
+  &__item {
+    grid-column: 4 span;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__image {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    color: var(--color-white);
+  }
+}
