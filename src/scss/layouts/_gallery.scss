@@ -16,9 +16,6 @@
     color: var(--color-white);
   }
 
-  &__description {
-  }
-
   &__body {
     display: flex;
     flex-direction: column;
@@ -38,9 +35,6 @@
     }
   }
 
-  &__images-list-wrapper {
-  }
-
   &__images-list {
     gap: 24px;
 
@@ -51,8 +45,5 @@
 
   &__images-item {
     grid-column: 3 span;
-  }
-
-  &__images-image {
   }
 }
