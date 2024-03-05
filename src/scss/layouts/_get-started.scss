@@ -1,0 +1,17 @@
+.get-started {
+  padding-block: 120px;
+
+  &__inner {
+    gap: 48px 24px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  &__title {
+    color: var(--color-white);
+  }
+}
