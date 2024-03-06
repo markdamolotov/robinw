@@ -1,0 +1,39 @@
+.footer-soc1als {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+
+  &__item {
+    flex-shrink: 0;
+
+    &:nth-child(1) {
+      color: var(--color-blue);
+    }
+
+    &:nth-child(2) {
+      color: var(--color-pink);
+    }
+
+    &:nth-child(3) {
+      color: var(--color-blue);
+    }
+  }
+
+  &__link {
+    @include flex-center;
+    @include square(24px);
+
+    &:focus-visible {
+      outline: 1px solid var(--color-white);
+      outline-offset: 0;
+    }
+
+    @include hover {
+      color: var(--color-accent);
+    }
+
+    &:active {
+      color: darken(#5221e6, 15%);
+    }
+  }
+}
